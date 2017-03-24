@@ -10,7 +10,7 @@ order: 50
 
 **Linux:** CircleCI is a very flexible platform so you should be able to **build almost any kind of application that will run on Linux**. It doesn't have to be a web application!
 
-**Android:** Although Android is not officially supported on 2.0 at this time, you can build Android apps on the 2.0 platform, [this post](https://discuss.circleci.com/t/thank-you-and-android-build-example/11298) has an excellent example of a customer successfully building Android on 2.0. **Note that this example does not use the emulator so it's not affected by the incompatibility between Docker and the Android emulator.** We will explain ways to run the Android emulator in future 2.0 documentation updates. Full documentation for building Android apps on 2.0 is coming soon. 
+**Android:** Although Android is not officially supported on 2.0 at this time, you can build Android apps on the 2.0 platform, [this post](https://discuss.circleci.com/t/thank-you-and-android-build-example/11298) has an excellent example of a customer successfully building Android on 2.0. **Note that this example does not use the emulator so it's not affected by the incompatibility between Docker and the Android emulator.** We will explain ways to run the Android emulator in future 2.0 documentation updates. Full documentation for building Android apps on 2.0 is coming soon.
 
 **iOS:** Building iOS apps is not yet supported on CircleCI 2.0. Please refer to our documentation for [iOS on 1.0]({{ site.baseurl }}/1.0/mobile/) until 2.0 support is available.
 
@@ -27,18 +27,6 @@ Currently, CircleCI 2.0 doesn't infer anything from your project, but we have pl
 Builds often freeze due to syntax errors in `config.yml`.
 
 Cancel the build, check your `config.yml` for proper indentation, and ensure that all jobs and steps have the required keys.
-
-## Can I use CircleCI 2.0 without creating base images?
-
-Yes, you can use* one of ours!
-
-The `circleci/build-image:ubuntu-14.04-XL-922-9410082` image has the same content as the Ubuntu Trusty 14.04 image our web app uses. Just know that the image is fairly large (around 17.5 GB uncompressed), so it’s less ideal for local testing.
-
-The image defaults to running actions as the `ubuntu` user and is designed to work with network services provided by Docker Compose.
-
-Here’s a [list of languages and tools]({{site.baseurl}}/1.0/build-image-ubuntu-14.04-XL-922-9410082/) included in the image.
-
-\*For now. The idea of a monolithic build image doesn’t fit well with the ethos of CircleCI 2.0, so we will eventually deprecate it.
 
 ## How do Docker image names work? Where do they come from?
 
