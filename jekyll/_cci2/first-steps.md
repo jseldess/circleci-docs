@@ -18,15 +18,13 @@ The Get Started form appears.
 2. Fill in all of the fields in the form:
 - First and Last Name 
 - Email address
-- GitHub or Bitbucket radio button
+- Sekect GitHub or Bitbucket radio button
 - GitHub or Bitbucket org name
 
 3. Click Submit.
-A Thank you message appears after the request for access is submitted. CircleCI support will add your information to the Beta and send email with links back to the 2.0 documentation. If you are already using CircleCI 1.0, go to [Migrating from 1.0 to 2.0]({{ site.baseurl }}/2.0/migrating-from-1-2/) to learn about the `.circle/config.yml` file that is used in CircleCI 2.0. If you are new to CircleCI, continue with Sign Up.
+A Thank you message appears after the request for access is submitted. CircleCI support will add your information to the Beta and send email with links back to the 2.0 documentation. If you are already using CircleCI 1.0, go to [Build a Project]({{ site.baseurl }}/2.0/build-project) to learn about the `.circle/config.yml` file that is used in CircleCI 2.0. If you are new to CircleCI, continue with Sign Up.
 
-4. Click Sign Up.
-
-The [Sign Up](https://circleci.com/signup/) page appears.
+4. Go to the [Sign Up](https://circleci.com/signup/) page.
 
 5. Click one of the Start buttons to begin the process of allowing CircleCI to access your code on GitHub or Bitbucket.
 
